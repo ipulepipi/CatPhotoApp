@@ -8,36 +8,50 @@
   <body>
     <main>
       <h1>CatPhotoApp</h1>
-      <section>
+      <p class="intro-para">
+        Cats are fascinating and beloved pets known for their independence and 
+        affectionate behavior. They possess sharp claws and keen senses, 
+        making them adept hunters. Cats display a playful and curious nature, 
+        often engaging in amusing antics. Their purring is soothing and provides 
+        comfort to their owners. Each cat has a unique personality, ranging from aloof 
+        to highly social. They are admired for their elegance, agility, and mysterious 
+        allure. Cats' ability to form strong bonds with their human companions, 
+        combined with their low-maintenance care, makes them ideal pets for many
+         households. Their presence brings joy and tranquility to any home.
+      </p>
+      <section class="cat-photos">
         <h2>Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
-        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        <p>See more <a target="_blank" href="/gallery.html">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" 
+            alt="A cute orange cat lying on its back.">
+        </a>
       </section>
       <section>
         <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
-        </ul>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ol>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
-        </figure>
+          <h3>Things cats love:</h3>
+          <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+          </ul>
+          <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+            <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+          </figure>
+          <h3>Top 3 things cats hate:</h3>
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
+          <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+          </figure>
       </section>
-      <section>
+      <section id="catForm">
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
           <fieldset>
@@ -51,14 +65,24 @@
             <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
             <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
           </fieldset>
-          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
+          <div>
+            <input id="catphotourl" type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <button id="submitButton" type="submit">Submit</button>
+          </div>
         </form>
       </section>
     </main>
     <footer>
-      <p>
-        Created by Ipule Pipi - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      <div id="footer-div">
+        <p>
+          Created by Ipule Pipi - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        </p>
+        <p>
+          Email: ipulepipi@nilexia.com
+        </p>
+        <p>
+          Phone: +675 71767700
+      </div>
       </p>
     </footer>
   </body>
